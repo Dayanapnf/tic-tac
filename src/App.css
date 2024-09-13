@@ -1,0 +1,16 @@
+.container {
+  min-height: 60vh;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-bottom: 3em;
+  }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 480px) {
+  .container {
+    margin-bottom: 2em;
+  }
+}

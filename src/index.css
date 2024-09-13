@@ -1,0 +1,74 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fbf9f9;
+}
+
+a,
+nav {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition: 0.4s;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 50px;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+}
+p {
+  text-align: center;
+  color: #fffe;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+button {
+  margin: 1px;
+  padding: 2px 5px;
+  font-size: 80px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(211, 23, 23);
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+}

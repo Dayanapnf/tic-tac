@@ -1,0 +1,114 @@
+/* Contêiner Principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #17045d;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  box-sizing: border-box;
+  margin: 30px auto 30px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Contêiner do Cabeçalho */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* Contêiner de Jogo e Informações */
+.gameArea {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* Estilos para a Coluna de Informações */
+.game_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  gap: 10px;
+  width: 200px;
+}
+
+/* Estilos do Botão */
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: auto;
+  background-color: #fff;
+  color: rgb(211, 23, 23);
+  border: 3px solid rgb(211, 23, 23);
+  border-radius: 20px;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  .gameArea {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    height: 500px;
+  }
+  .game_info {
+    align-items: center;
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  .gameArea {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    height: 400px;
+  }
+  .game_info {
+    align-items: center;
+    height: 300px;
+  }
+}

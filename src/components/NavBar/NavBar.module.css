@@ -1,0 +1,116 @@
+/* Navbar principal */
+.navbar {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Estilos da marca (logo) */
+.brand {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgb(211, 23, 23);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: padding-bottom 0.3s, border-color 0.3s;
+}
+
+.brand::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(211, 23, 23);
+  transition: width 0.4s;
+}
+
+.brand:hover::after {
+  width: 100%;
+}
+
+.brand span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* Lista de links */
+.linksList {
+  display: flex;
+  list-style: none;
+}
+
+.linksList li {
+  margin-right: 1em;
+}
+
+.linksList li a {
+  text-decoration: none;
+  color: rgb(211, 23, 23);
+  font-weight: bold;
+  position: relative;
+}
+
+.linksList li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: transparent;
+  transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.linksList li a:not(.active):hover::after {
+  width: 100%;
+  opacity: 1;
+  background-color: rgb(211, 23, 23);
+}
+.links_list .active a::after {
+  width: 0;
+  opacity: 0;
+}
+.active {
+  border-bottom: 2px solid rgb(211, 23, 23);
+  padding-bottom: 3px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .brand {
+    font-size: 0.8em;
+  }
+
+  .linksList {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    font-size: 0.6em;
+  }
+
+  .linksList {
+    font-size: 0.6em;
+  }
+}
